@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="description from my web site">
+    <title>Docs - Css selectors</title>
+    <style> 
+        /* selecting everything  */
+        * {
+            box-sizing: border-box;
+            color: white;
+        }
+
+        /* selecting by tag name */
+        header {
+            background-color:red;
+            width: 100%;
+            padding: 5px;
+        }
+
+        h1 {
+            font-weight: bold;
+            background-color: green;
+        }
+
+        h2 {
+            font-weight: bold;
+            background-color: aqua;
+        }
+
+        p {
+            height: 20px;
+            margin: 0;
+        }
+
+        body {
+            padding: 30px;
+            background-color: black;
+        }
+
+        hr {
+            margin-bottom: 40px;
+        }
+
+        /* selecting by id property (must be used in ONE element) */
+
+        #my-first-id {
+            background-color: red;
+            color: aquamarine;
+        }
+
+        /* selecting by class (can be used in multiple element) */
+
+        .my-first-class {
+            background-color: brown;
+            color: aquamarine;
+            padding: 5px;
+        }
+
+        .my-second-class {
+            background-color: palevioletred;
+            color: aquamarine;
+        }
+
+    </style>
+</head> 
+<body>
+    <header>
+        <h1>
+            CSS selectors
+        </h1>
+    </header>
+    <main>
+        <div>
+            <h2>
+                Selecting by tag
+            </h2>
+            <p>It's referenced by the tag name (ex: h1, h2, header), and changes made will be applied for all equal tags on the page.</p>
+        </div>
+        <hr>
+        <div>
+            <h2 id="my-first-id">
+                Selecting by id property
+            </h2>
+            <p>It's referenced by the # symbol and must be used only once</p>
+        </div>
+        <hr>
+        <div class="my-first-class">
+            <h2 class="my-second-class" >
+                Selecting by class property
+            </h2>
+            <p>It's referenced by the . (dot) symbol and can be used multiple times</p>
+            <p class="my-second-class">Using my class again</p>            
+        </div>
+        <div>
+            <h2 class="my-second-class" >
+                Selecting by class property again 
+            </h2>
+            <p>It's referenced by the . (dot) symbol and can be used multiple times</p>
+        </div>
+        <hr>
+    </main>
+
+</body>
+</html>
+
