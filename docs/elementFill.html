@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="description from my web site">
+    <title>Docs - Element fill</title>
+    <style> 
+        * {
+            /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. 
+            Check it out more on W3Schools.com */
+            box-sizing: border-box;
+            color: white; 
+        }
+
+        header {
+            background-color:red;
+            width: 100%;
+        }
+
+        div {
+            background-color:black;
+            
+            height: 60px;
+            max-width: max-content;
+            
+            /* filling the element */
+            padding:20px;
+            margin: 25px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: violet;
+        }
+
+        p {
+            height: 20px;
+            margin: 0;
+        }
+
+        em {
+            font-weight: bold;
+            color: aqua;
+        }
+    </style>
+</head> 
+<body>
+    <header>
+        <h1>
+            Element fill
+        </h1>
+        <div>
+            <p>
+                Fill this element using <em>box-sizing</em> with <em>border-box</em> value
+            </p>
+        </div>
+         <!-- The CSS box-sizing property allows us to include the padding and border in an element's total width and height. 
+        Check it out more on W3Schools.com  -->
+        <div style="box-sizing: initial;">
+            <p>
+                Fill this element using <em>box-sizing initial</em> value
+            </p>
+        </div>
+    </header>
+    <main>
+        <!-- applying height: auto to this div element only. It means, others div tags won't be affected -->
+        <div style="height: auto;">
+            <h2>
+                Those are the possibilities of fill element: 
+            </h2>
+            <ul>
+                <li>
+                    Inside the element
+                    <ul>
+                        <li>setting the padding</li>
+                        <li>setting the border</li>
+                        <li>putting a content (ex: texts)</li>
+                    </ul>
+
+                </li>
+                <li>
+                    Outside the element
+                    <ul>
+                        <li>setting the margin</li>
+                    </ul>
+                </li>
+            </ul>
+            <p> Open the console and search for <em>computed<em>to see it clearly</p>
+
+        </div>
+    </main>
+
+</body>
+</html>
+

@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head><title>chewy cookies</title><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+    <head>
+        <title>chewy cookies</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            /* header and footer config */
+            .header {
+                background-color:rgb(49, 153, 122); 
+                border:3px solid grey ;
+            }
+
+            .footer {
+                background-color:rgb(192, 165, 107); 
+                border:3px solid rgba(0,0,0) ;
+            }
+
+            .layout-spacing {
+                padding: 10px;
+                padding-bottom: 20px;
+                margin: 5px;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* recipe */
+            .recipe-h1 {
+                background-color:rgb(49, 153, 122); padding: 10px;padding-bottom: 20px;
+                margin: 5px;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                border:3px solid grey ;text-align: center;
+            }
+            
+        </style>
+    </head>
  
 <body style="background-color:black;color:white;padding:20px;">
-    <header style="background-color:rgb(49, 153, 122); padding: 10px;padding-bottom: 20px;
-        margin: 5px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        border:3px solid grey ;
-    ">
+    <header class="header layout-spacing">
 
         Header
     </header>
     <main> 
-        <h1 style="background-color:rgb(49, 153, 122); padding: 10px;padding-bottom: 20px;
-        margin: 5px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        border:3px solid grey ;text-align: center;
-    ">Chocolate chip cookies</h1>
+        <h1 class="recipe-h1">Chocolate chip cookies</h1>
         <p>My favourite recipe for cookies</p>
         <h2>Ingredients</h2>
         <ul>
@@ -57,13 +84,7 @@
         <h6 style="text-align: center;"> Share cookies with friends, family, co-workers and neighbors to spread some love and happiness*</h6>
     </main>
     <footer>
-        <footer style="background-color:rgb(49, 153, 122); padding: 10px;padding-bottom: 20px;
-            margin: 5px;
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            border:3px solid grey ;
-        ">
+        <footer class="footer layout-spacing">
         Footer
     </footer>
 </body>
